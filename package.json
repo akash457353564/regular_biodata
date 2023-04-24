@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "parcel": "^2.8.3"
+  },
+  "name": "@no_code_js/regular_biodata",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akash457353564/regular_biodata.git"
+  },
+  "author": "Akash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akash457353564/regular_biodata/issues"
+  },
+  "homepage": "https://github.com/akash457353564/regular_biodata#readme",
+  "description": ""
+}
