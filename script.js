@@ -1,5 +1,3 @@
-
-
 /////////////TO SEND DATA TO BACKEND////////////////////////////
 
 let fields = ["date", "month", "year", "hour", "minute", "seconds", "timeRefrence", "placeOfBirth", "rashi", "nakshatra", "selfReligion", "createdBy",
