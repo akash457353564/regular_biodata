@@ -679,7 +679,7 @@ let biodata_data = function() {
     let data = JSON.stringify(new_obj);
     //    console.log("Helllo World", obj)
     let request = new XMLHttpRequest();
-    let endPoint = new URL(`https://maverick-biodata-sj6eib36ga-el.a.run.app`);
+    let endPoint = new URL(`https://maverick-biodata-7i5cyyxrda-el.a.run.app`);
     let url = endPoint.toString();
     request.open("POST", url, true);
     request.setRequestHeader("Content-Type", "application/json");
@@ -702,7 +702,7 @@ let photo_upload = function(inputData) {
         "filePath": `${finalName}`
     });
     let request = new XMLHttpRequest();
-    let endPoint = new URL(`https://maverick-biodata-sj6eib36ga-el.a.run.app`);
+    let endPoint = new URL(`https://maverick-biodata-7i5cyyxrda-el.a.run.app`);
     let url = endPoint.toString();
     request.open("PATCH", url, true);
     request.setRequestHeader("Content-Type", "application/json");
