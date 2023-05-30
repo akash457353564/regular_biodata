@@ -703,7 +703,6 @@ const {
   ///////////////////SLIDER CODE///////////////////
 
 
-  //splide slider code
 function slider1() {
 
   let splides = $('.slider1');
