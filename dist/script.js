@@ -679,7 +679,7 @@ let biodata_data = function() {
     let data = JSON.stringify(new_obj);
     //    console.log("Helllo World", obj)
     let request = new XMLHttpRequest();
-    let endPoint = new URL(`https://maverick-biodata-7i5cyyxrda-el.a.run.app`);
+    let endPoint = new URL(`https://maverick-biodata-sj6eib36ga-el.a.run.app`); //PROD ENDPOINT -> https://maverick-biodata-7i5cyyxrda-el.a.run.app
     let url = endPoint.toString();
     request.open("POST", url, true);
     request.setRequestHeader("Content-Type", "application/json");
@@ -702,7 +702,7 @@ let photo_upload = function(inputData) {
         "filePath": `${finalName}`
     });
     let request = new XMLHttpRequest();
-    let endPoint = new URL(`https://maverick-biodata-7i5cyyxrda-el.a.run.app`);
+    let endPoint = new URL(`https://maverick-biodata-sj6eib36ga-el.a.run.app`); //PROD ENDPOINT -> https://maverick-biodata-7i5cyyxrda-el.a.run.app
     let url = endPoint.toString();
     request.open("PATCH", url, true);
     request.setRequestHeader("Content-Type", "application/json");
@@ -1129,8 +1129,49 @@ async function createPdf() {
     // Trigger the browser to download the PDF document
     download(pdfBytes, "My Bio-data.pdf", "application/pdf");
 }
-document.querySelector("#regular-biodata-form").addEventListener("submit", photo_submit) ////////////////////////////////////PDF GENERATION ENDS///////////////////////////////////////////////////////////
-;
+document.querySelector("#regular-biodata-form").addEventListener("submit", photo_submit);
+////////////////////////////////////PDF GENERATION ENDS///////////////////////////////////////////////////////////
+///////////////////SLIDER CODE///////////////////
+//splide slider code
+function slider1() {
+    let splides = $(".slider1");
+    for(let i = 0, splideLength = splides.length; i < splideLength; i++)new Splide(splides[i], {
+        // Desktop on down
+        perPage: 3,
+        perMove: 1,
+        focus: 0,
+        type: "loop",
+        gap: "2em",
+        arrows: "slider",
+        pagination: "slider",
+        speed: 600,
+        dragAngleThreshold: 30,
+        autoWidth: false,
+        rewind: true,
+        rewindSpeed: 400,
+        waitForTransition: false,
+        updateOnMove: true,
+        trimSpace: false,
+        breakpoints: {
+            991: {
+                // Tablet
+                perPage: 1,
+                gap: "4vw"
+            },
+            767: {
+                // Mobile Landscape
+                perPage: 1,
+                gap: "4vw"
+            },
+            479: {
+                // Mobile Portrait
+                perPage: 1,
+                gap: "4vw"
+            }
+        }
+    }).mount();
+}
+slider1();
 
 },{}]},["dpgAG","6rimH"], "6rimH", "parcelRequire67c9")
 
